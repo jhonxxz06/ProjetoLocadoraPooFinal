@@ -1,56 +1,40 @@
 # 🚗 Sistema de Locadora de Veículos
 
-Um programa em **Java** que simula o funcionamento básico de uma **Locadora de Veículos**, permitindo cadastrar, visualizar e editar informações de carros.  
-O sistema foi desenvolvido para **praticar conceitos fundamentais de POO**, como classes, objetos, encapsulamento e métodos, além de auxiliar no planejamento de despesas mensais com locações.
-
-A aplicação funciona totalmente via **terminal**, com um menu interativo.
+Programa simples em **Java** que simula uma **Locadora de Veículos** via terminal.  
+Criado para praticar **POO básica**: classes, objetos, encapsulamento e métodos.
 
 ---
 
-## 💻 Tecnologias utilizadas  
-
-- ☕ **Java** (JDK 8+)
-
----
-
-## 📜 Funcionalidades  
-
-O programa oferece um menu interativo com opções como:
-
-1. 🚘 **Cadastrar veículo** – cria um novo veículo informando nome/modelo e valor
-2. ✏️ **Editar veículo** – altera nome/modelo ou valor do veículo escolhido
-3. 🧮 **Calcular gasto mensal** – calcula quanto seria gasto com base no valor do veículo selecionado  
-4. ❌ **Sair do sistema**
-
-Cada veículo possui:
-
-- **Nome/Modelo**
-- **Valor**
-- **Métodos getters e setters**
-- **Método de exibição formatada**
-
-Essas operações utilizam **conceitos básicos de POO** sem estruturas avançadas, focando em manipular objetos diretamente.
+## 💻 Tecnologias
+- ☕ Java (JDK 8+)
 
 ---
 
-## 🚀 Como executar  
+## 📜 Funcionalidades
 
-### Pré-requisitos  
+1. 🚘 **Cadastrar veículo**  
+2. ✏️ **Editar dados**  
+3. 🧮 **Calcular gasto mensal**  
+4. ❌ **Sair**
 
-- Ter o **Java JDK** instalado  
-- Opcional: configurar a variável de ambiente `JAVA_HOME`  
+**Dados de cada veículo:**
+- Nome/Modelo  
+- Valor  
+- Métodos de acesso e exibição  
 
-### Passos para execução
+---
+
+## 🚀 Como executar
 
 ```bash
-# Clone o repositório
+# Clonar repositório
 git clone https://github.com/jhonxxz06/ProjetoLocadoraPooFinal.git
 
-# Acesse a pasta do projeto
+# Entrar na pasta
 cd ProjetoLocadoraPooFinal/src
 
-# Compile os arquivos
+# Compilar
 javac locadora/*.java
 
-# Execute o programa
+# Executar
 java locadora.LocadoraApp
