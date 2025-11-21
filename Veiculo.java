@@ -1,6 +1,9 @@
 package org.ucsal.poo.pf20252.br;
 import java.text.DecimalFormat;
 
+/**
+ * Classe que contém os atributos base que devem está presentes em qualquer tipo de veículo que venha a se tornar locável
+ */
 public abstract class Veiculo {
     private String placa;
     private String modelo;
@@ -32,6 +35,11 @@ public abstract class Veiculo {
         this.modelo = modelo;
     }
 
+    /**
+     * Construtor base para todos os novos tipos de veículo que vierem a surgir e que serão instanciados
+     * @param placa Preenche-se a placa no padrão MercoSul LLLNLNN ou no padrão antigo Brasileiro LLLNNNN
+     * @param modelo Preenche com o modelo que o tipo de veículo possui ex: xre 300 caso fosse uma moto, ford KA caso fosse um carro
+     */
     public  Veiculo(String placa, String modelo, double valorDiaria){
 
 
@@ -39,6 +47,12 @@ public abstract class Veiculo {
         this.modelo = modelo;
         this.valorDiaria = valorDiaria;
    }
+
+    /**
+     * Método utilizado para calcular o valor da locacao, é sobrescrito em todas as subclasses adicionando o percentual pelo tipo de veículo
+     * @param dias parametro que indica por quantos dias o usuário prentende utilizar o veículo
+     * @return Retorna o valor a ser pago, já com os adicionais do tipo de veículo
+     */
     public abstract double calcularValorLocacao(int dias);
 
 }
