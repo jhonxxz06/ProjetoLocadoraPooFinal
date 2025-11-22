@@ -1,5 +1,5 @@
 package org.ucsal.poo.pf20252.br;
-
+import java.util.Scanner;
 /**
  * Classe responsável por conter todos os dados referentes a locaço de um veículo
  */
@@ -27,11 +27,33 @@ public class Locacao implements Locavel {
 
    @Override
    public void iniciarLocacao(){
-      System.out.println("Locação Iniciada com sucesso!!!");
+      System.out.println("========\nLocação Iniciada com sucesso!!!\n========");
    }
 
    @Override
    public void finalizarLocacao(){
-      System.out.println("Locação Finalizada");
+      System.out.println("========\nLocação Finalizada\n========");
+   }
+
+   /**
+    * Metodo utilizado para o sistema confirmar se o cliente aprova a locação e se pode enfim chamar a interface finalizarLocacao ou se retornar ao menu de escolhas
+    * @return Retorna um dado booleano para ser lido por estruturas condicionais
+    */
+   public boolean confirmarLocacao() {
+      Scanner ler = new Scanner(System.in);
+      int confirmacao;
+      while (true) {
+         System.out.println("Cliente confirma a locacão do veículo? \n 1 - Sim  \n 2 - Não");
+         confirmacao = ler.nextInt();
+         switch (confirmacao) {
+            case 1:
+               return true;
+             case 2:
+               return false;
+            default:
+               System.out.println("Opção inválida tente novamente!");
+               continue;
+         }
+      }
    }
 }
