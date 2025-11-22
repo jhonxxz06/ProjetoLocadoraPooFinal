@@ -95,7 +95,7 @@ class Caminhao extends Veiculo {
     public double calcularValorLocacao(int dias){
         double valor = (getValorDiaria() * dias) * 1.15;
 
-        System.out.println("O valor da locação  de um caminhão para " + dias + " dias é de R$ " + df.format( valor));
+        System.out.println("O valor da locação de um caminhão para " + dias + " dias é de R$ " + df.format( valor));
         return valor;
     }
 }

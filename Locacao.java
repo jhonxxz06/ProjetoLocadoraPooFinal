@@ -1,5 +1,8 @@
 package org.ucsal.poo.pf20252.br;
 
+/**
+ * Classe responsável por conter todos os dados referentes a locaço de um veículo
+ */
 public class Locacao implements Locavel {
    private String dataInicio;
    private String dataFim;
