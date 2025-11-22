@@ -53,18 +53,40 @@ public class AppLocacao {
                                 case 1:
                                     Locacao locacao = new Locacao(cliente, carro1, "14/11/2025", "30/11/2025", qntdeDia);
                                     locacao.iniciarLocacao();
-                                    locacao.finalizarLocacao();
-                                    continue;
+
+                                    if(locacao.confirmarLocacao()){
+                                        locacao.finalizarLocacao();
+                                        continue;
+                                    }
+                                    else{
+                                        System.out.println("Voltando para o menu...");
+                                        continue;
+                                    }
+
                                 case 2:
                                     Locacao locacao2 = new Locacao(cliente, carro2, "14/11/2025", "30/11/2025", qntdeDia);
                                     locacao2.iniciarLocacao();
-                                    locacao2.finalizarLocacao();
-                                    continue;
+
+                                    if(locacao2.confirmarLocacao()){
+                                        locacao2.finalizarLocacao();
+                                        continue;
+                                    }
+                                    else{
+                                        System.out.println("Voltando para o menu...");
+                                        continue;
+                                    }
                                 case 3:
                                     Locacao locacao3 = new Locacao(cliente, carro3, "14/11/2025", "30/11/2025", qntdeDia);
                                     locacao3.iniciarLocacao();
-                                    locacao3.finalizarLocacao();
-                                    continue;
+
+                                    if(locacao3.confirmarLocacao()){
+                                        locacao3.finalizarLocacao();
+                                        continue;
+                                    }
+                                    else{
+                                        System.out.println("Voltando para o menu...");
+                                        continue;
+                                    }
                                 default:
                                     System.out.println("A opção escolhida para o modelo está fora do escopo!");
                                     continue;
@@ -85,18 +107,39 @@ public class AppLocacao {
                                 case 1:
                                     Locacao locacao = new Locacao(cliente, moto1, "14/11/2025", "30/11/2025", qntdeDia);
                                     locacao.iniciarLocacao();
-                                    locacao.finalizarLocacao();
-                                    continue;
+
+                                    if(locacao.confirmarLocacao()){
+                                        locacao.finalizarLocacao();
+                                        continue;
+                                    }
+                                    else{
+                                        System.out.println("Voltando para o menu...");
+                                        continue;
+                                    }
                                 case 2:
                                     Locacao locacao2 = new Locacao(cliente, moto2, "14/11/2025", "30/11/2025", qntdeDia);
                                     locacao2.iniciarLocacao();
-                                    locacao2.finalizarLocacao();
-                                    continue;
+
+                                    if(locacao2.confirmarLocacao()){
+                                        locacao2.finalizarLocacao();
+                                        continue;
+                                    }
+                                    else{
+                                        System.out.println("Voltando para o menu...");
+                                        continue;
+                                    }
                                 case 3:
                                     Locacao locacao3 = new Locacao(cliente, moto3, "14/11/2025", "30/11/2025", qntdeDia);
                                     locacao3.iniciarLocacao();
-                                    locacao3.finalizarLocacao();
-                                    continue;
+
+                                    if(locacao3.confirmarLocacao()){
+                                        locacao3.finalizarLocacao();
+                                        continue;
+                                    }
+                                    else{
+                                        System.out.println("Voltando para o menu...");
+                                        continue;
+                                    }
                                 default:
                                     System.out.println("A opção escolhida para o modelo está fora do escopo!");
                                     continue;
@@ -116,18 +159,39 @@ public class AppLocacao {
                                 case 1:
                                     Locacao locacao = new Locacao(cliente, caminhao1, "14/11/2025", "30/11/2025", qntdeDia);
                                     locacao.iniciarLocacao();
-                                    locacao.finalizarLocacao();
-                                    continue;
+
+                                    if(locacao.confirmarLocacao()){
+                                        locacao.finalizarLocacao();
+                                        continue;
+                                    }
+                                    else{
+                                        System.out.println("Voltando para o menu...");
+                                        continue;
+                                    }
                                 case 2:
                                     Locacao locacao2 = new Locacao(cliente, caminhao2, "14/11/2025", "30/11/2025", qntdeDia);
                                     locacao2.iniciarLocacao();
-                                    locacao2.finalizarLocacao();
-                                    continue;
+
+                                    if(locacao2.confirmarLocacao()){
+                                        locacao2.finalizarLocacao();
+                                        continue;
+                                    }
+                                    else{
+                                        System.out.println("Voltando para o menu...");
+                                        continue;
+                                    }
                                 case 3:
                                     Locacao locacao3 = new Locacao(cliente, caminhao3, "14/11/2025", "30/11/2025", qntdeDia);
                                     locacao3.iniciarLocacao();
-                                    locacao3.finalizarLocacao();
-                                    continue;
+
+                                    if(locacao3.confirmarLocacao()){
+                                        locacao3.finalizarLocacao();
+                                        continue;
+                                    }
+                                    else{
+                                        System.out.println("Voltando para o menu...");
+                                        continue;
+                                    }
                                 default:
                                     System.out.println("A opção escolhida para o modelo está fora do escopo!");
                                     continue;
