@@ -28,4 +28,8 @@ public class Cliente {
         this.Cpf = cpf;
         this.idade = idade;
     }
+
+    public String getNome() {
+        return nome;
+    }
 }
